@@ -120,5 +120,44 @@
 		<script src="register-sw.js"></script>
 		<script src="search.js"></script>
 		<script src="index.js"></script>
-	</body>
-</html>
+	<!-- ======================================================= -->
+<!--       ULTIMATE AD-FREE ENTERTAINMENT HUBS CONTROL       -->
+<!-- ======================================================= -->
+<div style="max-width: 900px; margin: 45px auto; padding: 25px; background: #141414; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.8); font-family: system-ui, -apple-system, sans-serif; text-align: center; color: #ffffff; border: 1px solid #222;">
+  <h2 style="margin-top: 0; color: #00ffcc; font-size: 26px; letter-spacing: 1px; font-weight: 800;">🎮 PRIVATE STEALTH ARCADE 🎮</h2>
+  <p style="color: #aaaaaa; font-size: 14px; margin-top: -5px; margin-bottom: 25px;">Select an unblocked media portal below to launch it inside a secure workspace tab</p>
+  
+  <!-- Consolidated Premium Application Buttons -->
+  <div style="display: flex; gap: 12px; justify-content: center; margin-bottom: 25px; flex-wrap: wrap;">
+    <button onclick="openPortal('https://github.io')" style="background: #2e7d32; color: #ffffff; border: none; padding: 12px 22px; border-radius: 10px; cursor: pointer; font-weight: bold; font-size: 14px; box-shadow: 0 4px 10px rgba(46,125,50,0.3); transition: 0.2s;">⛏️ Eaglercraft (Minecraft)</button>
+    <button onclick="openPortal('https://github.io')" style="background: #e65100; color: #ffffff; border: none; padding: 12px 22px; border-radius: 10px; cursor: pointer; font-weight: bold; font-size: 14px; box-shadow: 0 4px 10px rgba(230,81,0,0.3); transition: 0.2s;">🏍️ Moto X3M Build</button>
+    <button onclick="openPortal('https://gamedistribution.com')" style="background: #1565c0; color: #ffffff; border: none; padding: 12px 22px; border-radius: 10px; cursor: pointer; font-weight: bold; font-size: 14px; box-shadow: 0 4px 10px rgba(21,101,192,0.3); transition: 0.2s;">🏈 Retro Bowl Full</button>
+    <button onclick="openPortal('https://gamedistribution.com')" style="background: #37474f; color: #ffffff; border: none; padding: 12px 22px; border-radius: 10px; cursor: pointer; font-weight: bold; font-size: 14px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: 0.2s;">⛷️ Slope 3D Canvas</button>
+    <button onclick="openPortal('https://hyperpipe.pub')" style="background: #d32f2f; color: #ffffff; border: none; padding: 12px 22px; border-radius: 10px; cursor: pointer; font-weight: bold; font-size: 14px; box-shadow: 0 4px 10px rgba(211,47,47,0.3); transition: 0.2s;">🎵 Ad-Free Music Hub</button>
+  </div>
+
+  <!-- Status Informational Container -->
+  <div style="padding: 25px; background: #0a0a0a; border-radius: 12px; border: 1px solid #2a2a2a; color: #888888; font-size: 13px; line-height: 1.5;">
+    💡 <strong style="color: #bbb;">Chromebook Optimization:</strong> App windows initialize instantly inside a discrete new tab. This completely avoids cross-origin framing faults and keeps performance light on school hardware.
+  </div>
+</div>
+
+<script>
+  function openPortal(targetUrl) {
+    const runningTab = window.open();
+    if (runningTab) {
+      runningTab.document.body.style.margin = '0';
+      runningTab.document.body.style.height = '100vh';
+      const webFrame = runningTab.document.createElement('iframe');
+      webFrame.src = targetUrl;
+      webFrame.style.width = '100%';
+      webFrame.style.height = '100%';
+      webFrame.style.border = 'none';
+      runningTab.document.body.appendChild(webFrame);
+    } else {
+      window.open(targetUrl, '_blank');
+    }
+  }
+</script>
+<!-- ======================================================= -->
+
