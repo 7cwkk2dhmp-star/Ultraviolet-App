@@ -144,20 +144,9 @@
 
 <script>
   function openPortal(targetUrl) {
-    const runningTab = window.open();
-    if (runningTab) {
-      runningTab.document.body.style.margin = '0';
-      runningTab.document.body.style.height = '100vh';
-      const webFrame = runningTab.document.createElement('iframe');
-      webFrame.src = targetUrl;
-      webFrame.style.width = '100%';
-      webFrame.style.height = '100%';
-      webFrame.style.border = 'none';
-      runningTab.document.body.appendChild(webFrame);
-    } else {
-      window.open(targetUrl, '_blank');
-    }
+    window.open(targetUrl, '_blank');
   }
-</script>
+
+
 <!-- ======================================================= -->
 
